@@ -1,5 +1,3 @@
-import index from './index.test.js';
-
-console.log('test');
+import index from './index.test';
 
 index();
