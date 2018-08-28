@@ -1,3 +1,1 @@
-import index from './index.test';
-
-index();
+console.log('index.js')
