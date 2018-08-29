@@ -22,6 +22,7 @@ module.exports = {
       chunks: 'all'
     }
   },
+  resolve: {extensions: ['.js','.jsx']},
   module: {
     rules: [
       {
