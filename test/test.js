@@ -1,5 +1,4 @@
-const context = require.context('.', true, /.+\.test\.js?$/);
+const context = require.context('.', true, /.+\.test\.?$/);
 context.keys().forEach(context);
-require('./index.test');
 
 module.exports = context;
