@@ -1,6 +1,6 @@
 import demo from './demo';
 
-import './style.scss';
+require('./style.scss');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
