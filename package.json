@@ -10,7 +10,7 @@
     "start": "webpack --config webpack.common.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js --verbose",
-    "test": "webpack-dev-server --config webpack.dev.js mocha-loader!./src/index.test.js"
+    "test": "webpack-dev-server --config webpack.dev.js"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
