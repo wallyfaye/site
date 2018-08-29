@@ -7,13 +7,15 @@
   "author": "Wally Faye <wally.faye@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.common.js",
+    "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js --verbose",
-    "test": "webpack-dev-server --config webpack.dev.js"
+    "test": "webpack-dev-server --config webpack.test.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
     "chai": "^4.1.2",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",

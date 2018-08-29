@@ -4,9 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: {
-    app: './src/index.js'
-  },
+  entry: './src/index.js',
   plugins: [
     new CleanWebpackPlugin(['dist'], {
       exclude: ['.gitignore'],
@@ -23,5 +21,19 @@ module.exports = {
     splitChunks: {
       chunks: 'all'
     }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
   }
 };

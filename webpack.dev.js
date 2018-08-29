@@ -30,11 +30,6 @@ module.exports = merge(common, {
         'css-loader',
         'sass-loader'
         ]
-      },
-      {
-        test: /\.test\.js$/,
-        use: 'mocha-loader',
-        exclude: /node_modules/
       }
     ]
   }

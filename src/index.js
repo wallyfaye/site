@@ -1,7 +1,9 @@
-import './index.test';
+import demo from './demo';
 
 require('./style.scss');
 
 if (process.env.NODE_ENV !== 'production') {
-  console.log('dev mode');
+  console.log(demo);
 }
+
+console.log(demo.demo);
