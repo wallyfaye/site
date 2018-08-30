@@ -1,0 +1,25 @@
+@define-mixin flexFill
+  display: flex
+  align-items: center
+  justify-content: center
+
+:root 
+  --core-bgColor: #12345678
+
+.core
+  background-color: var(--core-bgColor)
+  display: grid
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  & .core__mode-name
+    @mixin flexFill
+
+  & .core__mode-name_development
+    text-transform: uppercase
+
+  & .core__mode-name_production
+    font-weight: bold

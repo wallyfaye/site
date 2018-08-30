@@ -1,10 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app.jsx';
-require('./style.scss');
+import { render } from 'react-dom';
+import { Launcher, DocumentIndex } from './core';
 
-const g = document.createElement('div');
-g.setAttribute('id', 'index');
-document.body.appendChild(g);
-
-ReactDOM.render(<App />, document.getElementById('index'));
+render(<Launcher />, DocumentIndex());

@@ -1,1 +1,1 @@
-body{background-color:rgba(18,52,86,.47059)}
+:root{--core-bgColor:rgba(18,52,86,0.47059)}.core{background-color:rgba(18,52,86,.47059);background-color:var(--core-bgColor);bottom:0;display:grid;left:0;position:fixed;right:0;top:0}.core .core__mode-name{align-items:center;display:flex;justify-content:center}.core .core__mode-name_development{text-transform:uppercase}.core .core__mode-name_production{font-weight:700}

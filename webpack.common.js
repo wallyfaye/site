@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index',
   plugins: [
     new CleanWebpackPlugin(['dist'], {
       exclude: ['.gitignore'],

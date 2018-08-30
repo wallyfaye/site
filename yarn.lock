@@ -1398,6 +1398,10 @@ camel-case@3.0.x:
     no-case "^2.2.0"
     upper-case "^1.1.1"
 
+camelcase-css@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/camelcase-css/-/camelcase-css-1.0.1.tgz#157c4238265f5cf94a1dffde86446552cbf3f705"
+
 camelcase-keys@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/camelcase-keys/-/camelcase-keys-2.1.0.tgz#308beeaffdf28119051efa1d932213c91b8f92e7"
@@ -4412,13 +4416,13 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
+lodash@>=3.10.0, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.8.0, lodash@~4.17.10:
+  version "4.17.10"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+
 lodash@^3.3.1:
   version "3.10.1"
   resolved "http://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
-
-lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.8.0, lodash@~4.17.10:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
 log-symbols@^2.0.0:
   version "2.2.0"
@@ -5466,6 +5470,14 @@ postcss-attribute-case-insensitive@^3.0.1:
     postcss "^6.0.23"
     postcss-selector-parser "^4.0.0"
 
+postcss-bem-linter@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-bem-linter/-/postcss-bem-linter-3.1.0.tgz#55352412fb481aad0d05148185a990734e1ca030"
+  dependencies:
+    minimatch "^3.0.3"
+    postcss "^6.0.6"
+    postcss-resolve-nested-selector "^0.1.1"
+
 postcss-calc@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/postcss-calc/-/postcss-calc-6.0.1.tgz#3d24171bbf6e7629d422a436ebfe6dd9511f4330"
@@ -5639,6 +5651,13 @@ postcss-initial@^2.0.0:
     lodash.template "^4.2.4"
     postcss "^6.0.1"
 
+postcss-js@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-js/-/postcss-js-1.0.1.tgz#ffaf29226e399ea74b5dce02cab1729d7addbc7b"
+  dependencies:
+    camelcase-css "^1.0.1"
+    postcss "^6.0.11"
+
 postcss-jsx@^0.33.0:
   version "0.33.0"
   resolved "https://registry.yarnpkg.com/postcss-jsx/-/postcss-jsx-0.33.0.tgz#433f8aadd6f3b0ee403a62b441bca8db9c87471c"
@@ -5758,6 +5777,16 @@ postcss-minify-selectors@^4.0.0:
     has "^1.0.0"
     postcss "^6.0.0"
     postcss-selector-parser "^3.0.0"
+
+postcss-mixins@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/postcss-mixins/-/postcss-mixins-6.2.0.tgz#fa9d2c2166b2ae7745956c727ab9dd2de4b96a40"
+  dependencies:
+    globby "^6.1.0"
+    postcss "^6.0.13"
+    postcss-js "^1.0.1"
+    postcss-simple-vars "^4.1.0"
+    sugarss "^1.0.0"
 
 postcss-modules-extract-imports@^1.2.0:
   version "1.2.0"
@@ -6029,6 +6058,12 @@ postcss-selector-parser@^4.0.0:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
+postcss-simple-vars@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-simple-vars/-/postcss-simple-vars-4.1.0.tgz#043248cfef8d3f51b3486a28c09f8375dbf1b2f9"
+  dependencies:
+    postcss "^6.0.9"
+
 postcss-styled@>=0.33.0, postcss-styled@^0.33.0:
   version "0.33.0"
   resolved "https://registry.yarnpkg.com/postcss-styled/-/postcss-styled-0.33.0.tgz#69be377584105a582fda7e4f76888e5b97eed737"
@@ -6074,6 +6109,14 @@ postcss@6.0.22:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
+postcss@>=5.0.19, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.2.tgz#7b5a109de356804e27f95a960bef0e4d5bc9bb18"
+  dependencies:
+    chalk "^2.4.1"
+    source-map "^0.6.1"
+    supports-color "^5.4.0"
+
 postcss@^5.2.16:
   version "5.2.18"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
@@ -6083,17 +6126,9 @@ postcss@^5.2.16:
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0, postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.16, postcss@^6.0.18, postcss@^6.0.20, postcss@^6.0.21, postcss@^6.0.22, postcss@^6.0.23, postcss@^6.0.8:
+postcss@^6.0, postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.11, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.16, postcss@^6.0.18, postcss@^6.0.20, postcss@^6.0.21, postcss@^6.0.22, postcss@^6.0.23, postcss@^6.0.6, postcss@^6.0.8, postcss@^6.0.9:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
-  dependencies:
-    chalk "^2.4.1"
-    source-map "^0.6.1"
-    supports-color "^5.4.0"
-
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.2.tgz#7b5a109de356804e27f95a960bef0e4d5bc9bb18"
   dependencies:
     chalk "^2.4.1"
     source-map "^0.6.1"
@@ -7305,7 +7340,16 @@ stylelint-config-standard@^18.2.0:
   dependencies:
     stylelint-config-recommended "^2.1.0"
 
-stylelint@^9.5.0:
+stylelint-selector-bem-pattern@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-selector-bem-pattern/-/stylelint-selector-bem-pattern-2.0.0.tgz#9a6130c9c90963b30e925c917079d6c8fed73f45"
+  dependencies:
+    lodash ">=3.10.0"
+    postcss ">=5.0.19"
+    postcss-bem-linter "^3.0.0"
+    stylelint ">=3.0.2"
+
+stylelint@>=3.0.2, stylelint@^9.5.0:
   version "9.5.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.5.0.tgz#f7afb45342abc4acf28a8da8a48373e9f79c1fb4"
   dependencies:
@@ -7354,6 +7398,12 @@ stylelint@^9.5.0:
     sugarss "^2.0.0"
     svg-tags "^1.0.0"
     table "^4.0.1"
+
+sugarss@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sugarss/-/sugarss-1.0.1.tgz#be826d9003e0f247735f92365dc3fd7f1bae9e44"
+  dependencies:
+    postcss "^6.0.14"
 
 sugarss@^2.0.0:
   version "2.0.0"
