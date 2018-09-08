@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/controls.css" >
+    <link rel="stylesheet" href="styles/type.css" >
+    <link rel="stylesheet" href="styles/layouts.css" >
+    <link rel="stylesheet" href="styles/structure.css" >
+    <link rel="stylesheet" href="styles/scan/scan-results.css" >
+
+    <link rel="stylesheet" href="styles/highlight/default.min.css">
+</head>
+<body>
+    <div class="section container">
+    <div class="scan-overview" data-id="1536398404365">
+        <div class="scan-overview__header">
+            <p>URL:
+                <a href="http://localhost/">http://localhost/</a>
+            </p>
+            <p class="scan-overview__status">
+            finished
+            </p>
+        </div>
+        <div class="scan-overview--details">
+            <div class="scan-overview--warnings">
+                <p class="scan-overview__subheader">warnings</p>
+                <p class="scan-overview__body--red" id="total-warnings">1</p>
+            </div>
+            <div class="scan-overview--errors">
+                <p class="scan-overview__subheader">errors</p>
+                <p class="scan-overview__body--red" id="total-errors">29</p>
+            </div>
+            <div class="scan-overview--time">
+                <p class="scan-overview__subheader">scan time</p>
+                <p class="scan-overview__body--purple">00:11</p>
+            </div>
+            <div class="scan-overview--version">
+                <p class="scan-overview__subheader">version</p>
+                <p class="scan-overview__body--purple">3.3.2</p>
+            </div>
+            <div class="scan-overview--config">
+                <p class="scan-overview__subheader">Scan Configuration</p>
+                <a class="scan-overview__body__link" href="config/1536398404365">View JSON file</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="layout layout--fifths">
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Accessibility">Accessibility</a>
+                </p>
+                <img src="images/scan/accessibility.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed Accessibility errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed Accessibility warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Development">Development</a>
+                </p>
+                <img src="images/scan/dev-icon.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed Development errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed Development warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Interoperability">Interoperability</a>
+                </p>
+                <img src="images/scan/interoperability.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Interoperability errors">
+                        8 Errors
+                    </p>
+                    <p class="rule-list--failed Interoperability warnings">
+                        1 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Other">Other</a>
+                </p>
+                <img src="images/scan/other-icon.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed Other errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed Other warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#PWA">PWA</a>
+                </p>
+                <img src="images/scan/pwa.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed PWA errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed PWA warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Performance">Performance</a>
+                </p>
+                <img src="images/scan/performance.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Performance errors">
+                        9 Errors
+                    </p>
+                    <p class="rule-list--passed Performance warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Security">Security</a>
+                </p>
+                <img src="images/scan/security.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Security errors">
+                        12 Errors
+                    </p>
+                    <p class="rule-list--passed Security warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <section id="results-container" class="section container" role="main" aria-labelledby="errors-warnings" aria-live="polite">
+        <h2 id="errors-warnings">Errors &amp; Warnings</h2>
+        <div class="layout layout--sidebar--alt">
+            <div class="module module--primary results">
+            
+                <section class="rule-result" id="Accessibility">
+                    <div class="rule-result--category">
+                        <h3>Accessibility</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="Development">
+                    <div class="rule-result--category">
+                        <h3>Development</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="Interoperability">
+                    <div class="rule-result--category">
+                        <h3>Interoperability</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="content-type">
+    <div class="rule-result--details__header">
+        <p class="rule-title">content-type: 6 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-content-type/" title="documentation for content-type rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show content-type's result details" class="button--details" data-rule="content-type">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header charset value should be &#39;utf-8&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header media type value should be &#39;text/javascript&#39;, not &#39;application/javascript&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header charset value should be &#39;utf-8&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header media type value should be &#39;text/javascript&#39;, not &#39;application/javascript&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header charset value should be &#39;utf-8&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.css">
+                http://localhost/main.css:4:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;main.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header charset value should be &#39;utf-8&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="meta-viewport">
+    <div class="rule-result--details__header">
+        <p class="rule-title">meta-viewport: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-meta-viewport/" title="documentation for meta-viewport rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show meta-viewport's result details" class="button--details" data-rule="meta-viewport">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;viewport&#39; meta element was not specified.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="html-checker">
+    <div class="rule-result--details__header">
+        <p class="rule-title">html-checker: 2 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-html-checker/" title="documentation for html-checker rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show html-checker's result details" class="button--details" data-rule="html-checker">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Start tag seen without seeing a doctype first. Expected “&lt;!DOCTYPE html&gt;”.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/:1:1
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;html lang=&#34;en-US&#34;&gt;&lt;head&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            The “type” attribute is unnecessary for JavaScript resources.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code> &lt;body&gt;
+  &lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/scri</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                    
+                </section>
+            
+                <section class="rule-result" id="Other">
+                    <div class="rule-result--category">
+                        <h3>Other</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="PWA">
+                    <div class="rule-result--category">
+                        <h3>PWA</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="Performance">
+                    <div class="rule-result--category">
+                        <h3>Performance</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="http-cache">
+    <div class="rule-result--details__header">
+        <p class="rule-title">http-cache: 5 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-http-cache/" title="documentation for http-cache rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show http-cache's result details" class="button--details" data-rule="http-cache">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.css">
+                http://localhost/main.css:4:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;main.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/favicon.ico">
+                http://localhost/favicon.ico
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="http-compression">
+    <div class="rule-result--details__header">
+        <p class="rule-title">http-compression: 4 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-http-compression/" title="documentation for http-compression rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show http-compression's result details" class="button--details" data-rule="http-compression">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.css">
+                http://localhost/main.css:4:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;main.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                    
+                </section>
+            
+                <section class="rule-result" id="Security">
+                    <div class="rule-result--category">
+                        <h3>Security</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="ssllabs">
+    <div class="rule-result--details__header">
+        <p class="rule-title">ssllabs: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-ssllabs/" title="documentation for ssllabs rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show ssllabs's result details" class="button--details" data-rule="ssllabs">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;http://localhost/&#39; does not support HTTPS.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+        <div class="rule-result--details__footer-msg">
+            
+                <p>To learn more visit </p>
+            
+
+            <a href="https://www.ssllabs.com/ssltest/analyze.html?d=%URL%">
+                <img src="images/scan/qualys-ssl-labs-logo.png" alt="Qualys SSL Labs" class="ssllabs-logo" />
+            </a>
+        </div>
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="no-disallowed-headers">
+    <div class="rule-result--details__header">
+        <p class="rule-title">no-disallowed-headers: 5 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-no-disallowed-headers/" title="documentation for no-disallowed-headers rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show no-disallowed-headers's result details" class="button--details" data-rule="no-disallowed-headers">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;server&#39; header value should only contain the server name, not &#39;nginx/1.15.3&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/">
+                http://localhost/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;server&#39; header value should only contain the server name, not &#39;nginx/1.15.3&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;server&#39; header value should only contain the server name, not &#39;nginx/1.15.3&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;server&#39; header value should only contain the server name, not &#39;nginx/1.15.3&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.css">
+                http://localhost/main.css:4:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;main.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;server&#39; header value should only contain the server name, not &#39;nginx/1.15.3&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/favicon.ico">
+                http://localhost/favicon.ico
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="x-content-type-options">
+    <div class="rule-result--details__header">
+        <p class="rule-title">x-content-type-options: 3 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-x-content-type-options/" title="documentation for x-content-type-options rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show x-content-type-options's result details" class="button--details" data-rule="x-content-type-options">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should include &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should include &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should include &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.css">
+                http://localhost/main.css:4:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;main.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="sri">
+    <div class="rule-result--details__header">
+        <p class="rule-title">sri: 3 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-sri/" title="documentation for sri rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show sri's result details" class="button--details" data-rule="sri">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Resource &lt;a href=&#34;http://localhost/main.bundle.js&#34;&gt;http://localhost/main.bundle.js&lt;/a&gt; requested without the &#34;integrity&#34; attribute
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.bundle.js">
+                http://localhost/main.bundle.js:6:66
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Resource &lt;a href=&#34;http://localhost/1.main.bundle.js&#34;&gt;http://localhost/1.main.bundle.js&lt;/a&gt; requested without the &#34;integrity&#34; attribute
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/1.main.bundle.js">
+                http://localhost/1.main.bundle.js:6:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;1.main.bundle.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Resource &lt;a href=&#34;http://localhost/main.css&#34;&gt;http://localhost/main.css&lt;/a&gt; requested without the &#34;integrity&#34; attribute
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost/main.css">
+                http://localhost/main.css:4:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;main.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                    
+                </section>
+            
+            </div>
+        </div>
+    </section>
+    <section class="section container">
+        <p class="subtitle">Have an issue or problem with the scanner?</p>
+        <p>File an issue on
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/webhintio/hint/issues/new">GitHub</a> and let us know or try and run webhint again.</p>
+    </section>
+</div>
+
+
+    <script src="js/highlight/highlight.min.js"></script>
+    <script src="js/highlight/languages/xml.min.js"></script>
+
+    <script src="js/scan/scanner-common.js"></script>
+</body>
+</html>
