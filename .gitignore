@@ -2,3 +2,4 @@ node_modules/
 .sass-cache/
 yarn-error.log
 .DS_Store
+hint-report/
