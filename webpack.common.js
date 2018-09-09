@@ -10,7 +10,10 @@ module.exports = {
       exclude: ['.gitignore'],
     }),
     new HtmlWebpackPlugin({
-      title: 'Site'
+      title: 'Site',
+      inject: false,
+      template: 'src/index.ejs',
+      lang: 'en-US'
     })
   ],
   output: {
