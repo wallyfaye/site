@@ -13,7 +13,8 @@ module.exports = {
       title: 'Site',
       inject: false,
       template: 'src/index.ejs',
-      lang: 'en-US'
+      lang: 'en-US',
+      mobile: true
     })
   ],
   output: {
