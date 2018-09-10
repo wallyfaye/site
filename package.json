@@ -7,13 +7,13 @@
   "author": "Wally Faye <wally.faye@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --env.production --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
     "test": "webpack-dev-server --config webpack.test.js",
     "selenium": "selenium-standalone install && selenium-standalone start",
     "codeceptjs": "codeceptjs run --steps",
-    "hint": "hint http://localhost/",
-    "hint:report": "open ./hint-report/http-localhost/index.html"
+    "hint": "hint https://localhost/",
+    "hint:report": "open ./hint-report/https-localhost/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
