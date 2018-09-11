@@ -26,7 +26,7 @@ module.exports = (env) => {
     ],
     output: {
       crossOriginLoading: 'anonymous',
-      filename: 'main.bundle.js',
+      filename: 'main.bundle.[hash].js',
       path: path.resolve(__dirname, 'dist')
     },
     optimization: {
@@ -34,7 +34,12 @@ module.exports = (env) => {
         chunks: 'all'
       }
     },
-    resolve: {extensions: ['.js','.jsx']},
+    resolve: {
+      extensions: [
+        '.js',
+        '.jsx'
+      ]
+    },
     module: {
       rules: [
         {
