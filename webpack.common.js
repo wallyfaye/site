@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const SriPlugin = require('webpack-subresource-integrity');
 const webpack = require('webpack');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = (env) => {
   return {
@@ -17,6 +18,7 @@ module.exports = (env) => {
         template: 'src/index.ejs',
         lang: 'en-US',
         mobile: true,
+        hash: true,
         favicon: 'src/assets/favicon.ico'
       }),
       new SriPlugin({
@@ -26,7 +28,7 @@ module.exports = (env) => {
     ],
     output: {
       crossOriginLoading: 'anonymous',
-      filename: 'main.bundle.[hash].js',
+      filename: 'main.bundle.js',
       path: path.resolve(__dirname, 'dist')
     },
     optimization: {

@@ -44,7 +44,7 @@ module.exports = (env) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: "[name].[hash].css"
+        filename: "[name].css"
       })
     ]
   });

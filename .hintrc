@@ -1,5 +1,10 @@
 {
-    "extends": [
-        "web-recommended"
-    ]
+	"extends": [
+		"web-recommended"
+	],
+	"hints": {
+		"http-cache": ["error", {
+			"revvingPatterns": [".*\/(.*)\\?", "\\.(ico)$"]
+		}]
+	}
 }
