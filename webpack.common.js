@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const SriPlugin = require('webpack-subresource-integrity');
 const webpack = require('webpack');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin');
+const zopfli = require('@gfx/zopfli');
 
 module.exports = (env) => {
   return {
@@ -15,6 +16,9 @@ module.exports = (env) => {
       new HtmlWebpackPlugin({
         title: 'Site',
         inject: false,
+        minify: {
+          collapseWhitespace: true
+        },
         template: 'src/index.ejs',
         lang: 'en-US',
         mobile: true,
@@ -24,6 +28,20 @@ module.exports = (env) => {
       new SriPlugin({
         hashFuncNames: ['sha256', 'sha384'],
         enabled: env.production
+      }),
+      new CompressionPlugin({
+        test: [
+          /\.js(\?.*)?$/i,
+          /\.css(\?.*)?$/i,
+          /\.ico(\?.*)?$/i,
+          /\.html(\?.*)?$/i
+        ],
+        compressionOptions: {
+          numiterations: 15
+        },
+        algorithm(input, compressionOptions, callback) {
+          return zopfli.gzip(input, compressionOptions, callback);
+        }
       })
     ],
     output: {
