@@ -3,6 +3,9 @@
 		"web-recommended"
 	],
 	"hints": {
+		"content-type": ["error", {
+			".*\\.js": "application/javascript; charset=utf-8"
+		}],
 		"http-cache": ["error", {
 			"revvingPatterns": [".*\/(.*)\\?", "\\.(ico)$"]
 		}]
