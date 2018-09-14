@@ -8,6 +8,9 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
 %>
 <html lang="<%= htmlWebpackPlugin.options.lang %>"<% if (htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>>
   <head>
+    <noscript>
+      <a href="https://www.mozilla.com/">Please enable JavaScript</a>
+    </noscript>
     <meta charset="utf-8"><%
 
     if (htmlWebpackPlugin.options.baseHref) { %>

@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const fs = require('fs');
 
 module.exports = (env) => {
   return merge(common(env), {
@@ -8,7 +9,11 @@ module.exports = (env) => {
     devtool: 'inline-source-map',
     devServer: {
       contentBase: './dist',
-      hot: true
+      hot: true,
+      https: {
+        key: fs.readFileSync('./../../../secrets/localhost.key'),
+        cert: fs.readFileSync('./../../../secrets/localhost.crt')
+      }
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin()
