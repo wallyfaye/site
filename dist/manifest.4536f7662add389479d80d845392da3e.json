@@ -37,6 +37,7 @@
   "display": "standalone",
   "start_url": ".",
   "theme_color": "#ffffff",
+  "author": "demo",
   "description": "My awesome Progressive Web App!",
   "background_color": "#ffffff"
 }

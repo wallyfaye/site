@@ -1,10 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const SriPlugin = require('webpack-subresource-integrity');
 const webpack = require('webpack');
-const CompressionPlugin = require('compression-webpack-plugin');
-const zopfli = require('@gfx/zopfli');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 
@@ -21,29 +18,17 @@ module.exports = (env) => {
         minify: {
           collapseWhitespace: true
         },
+        meta: [
+          {
+            name: 'description',
+            content: 'This is a description'
+          }
+        ],
         template: 'src/index.ejs',
         lang: 'en-US',
         mobile: true,
         hash: true,
         favicon: 'src/assets/favicon.ico'
-      }),
-      new SriPlugin({
-        hashFuncNames: ['sha256', 'sha384'],
-        enabled: env.production
-      }),
-      new CompressionPlugin({
-        test: [
-          /\.js(\?.*)?$/i,
-          /\.css(\?.*)?$/i,
-          /\.ico(\?.*)?$/i,
-          /\.html(\?.*)?$/i
-        ],
-        compressionOptions: {
-          numiterations: 15
-        },
-        algorithm(input, compressionOptions, callback) {
-          return zopfli.gzip(input, compressionOptions, callback);
-        }
       }),
       new WorkboxPlugin.GenerateSW({
         clientsClaim: true,
@@ -51,6 +36,7 @@ module.exports = (env) => {
       }),
       new WebpackPwaManifest({
         theme_color: '#ffffff',
+        author: 'demo',
         name: 'My Progressive Web App',
         short_name: 'MyPWA',
         description: 'My awesome Progressive Web App!',
