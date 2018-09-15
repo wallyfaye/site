@@ -27,7 +27,7 @@ module.exports = (env) => {
         template: 'src/index.ejs',
         lang: 'en-US',
         mobile: true,
-        hash: true,
+        hash: false,
         favicon: 'src/assets/favicon.ico'
       }),
       new WorkboxPlugin.GenerateSW({
@@ -36,7 +36,6 @@ module.exports = (env) => {
       }),
       new WebpackPwaManifest({
         theme_color: '#ffffff',
-        author: 'demo',
         name: 'My Progressive Web App',
         short_name: 'MyPWA',
         description: 'My awesome Progressive Web App!',

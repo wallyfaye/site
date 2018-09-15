@@ -8,9 +8,6 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
 %>
 <html lang="<%= htmlWebpackPlugin.options.lang %>"<% if (htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>>
   <head>
-    <noscript>
-      <a href="https://www.mozilla.com/">Please enable JavaScript</a>
-    </noscript>
     <meta charset="utf-8"><%
 
     if (htmlWebpackPlugin.options.baseHref) { %>
@@ -54,7 +51,10 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
     <%= htmlWebpackPlugin.options.headHtmlSnippet %><%
     } %>
   </head>
-  <body><%
+  <body>
+    <noscript>
+      <a href="https://www.mozilla.com/">Please enable JavaScript</a>
+    </noscript><%
     if (htmlWebpackPlugin.options.unsupportedBrowser) { %>
     <style>.unsupported-browser { display: none; }</style>
     <div class="unsupported-browser">
