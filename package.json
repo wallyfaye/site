@@ -14,7 +14,7 @@
     "codeceptjs": "codeceptjs run --steps",
     "hint": "hint https://localhost/",
     "hint:report": "open ./hint-report/https-localhost/index.html",
-    "build:app": "yarn run cordova:create && add:ios",
+    "build:app": "yarn run cordova:create && yarn run ios:add && yarn run android:add",
     "cordova:create": "cordova create ./app/site com.test.site site",
     "ios:add": "(cd ./app/site && cordova platform add ios)",
     "ios:run": "(cd ./app/site && cordova run --buildConfig=./../../build.json ios)",
