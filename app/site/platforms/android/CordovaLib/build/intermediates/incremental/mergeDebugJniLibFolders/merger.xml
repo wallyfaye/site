@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/art11/Desktop/optionalContainer/wp-docker-react/volumes/node_app/data/app/site/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/art11/Desktop/optionalContainer/wp-docker-react/volumes/node_app/data/app/site/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
