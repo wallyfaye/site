@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --env.production --config webpack.prod.js",
+    "build:www": "webpack --env.production --config webpack.app.js",
     "dev": "webpack-dev-server --env.production=false --config webpack.dev.js",
     "test": "webpack-dev-server --config webpack.test.js",
     "selenium": "selenium-standalone install && selenium-standalone start",
@@ -15,7 +16,7 @@
     "hint": "hint https://localhost/",
     "hint:report": "open ./hint-report/https-localhost/index.html",
     "build:app": "yarn run cordova:create && yarn run ios:add && yarn run android:add",
-    "cordova:create": "cordova create ./app/site com.test.site site",
+    "cordova:create": "rm -r ./app/site && cordova create ./app/site com.test.site site --template=./www",
     "ios:add": "(cd ./app/site && cordova platform add ios)",
     "ios:run": "(cd ./app/site && cordova run --buildConfig=./../../build.json ios)",
     "android:add": "(cd ./app/site && cordova platform add android)",
